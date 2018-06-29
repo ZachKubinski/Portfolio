@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio</title>
 
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="/../css/StyleSheet1.css">
+
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -17,26 +23,20 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+                <div class="navbar-brand">@Html.ActionLink("Home", "Index", "Portfolio", null)</div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">File I/O</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">SafeNet Consulting Problem</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Unit Converter</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Final Project</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About/Contact</a></li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("SafeNet Consulting Problem", "ATM", "Portfolio", null)</li>
+                <li>@Html.ActionLink("File I/O", "FileIO", "Portfolio", null)</li>
+                <li>@Html.ActionLink("Unit Converter", "UnitConverter", "Portfolio", null)</li>
+                <li>@Html.ActionLink("Final Project", "FinalProject", "Portfolio", null)</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Bio", "Bio", "Portfolio", null)</li>
+            </ul>
         </div>
     </nav>
     <div class="container body-content">
