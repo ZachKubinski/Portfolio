@@ -1,2 +1,13 @@
 ﻿body {
 }
+
+#header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: grey;
+    font-size: 48px;
+    border-radius: 0px 0px 30px 30px;
+    filter: alpha(opacity=50);
+    box-shadow: 10px 10px 5px grey;
+    background: linear-gradient(rgba(251, 212, 0, 1), rgb(255, 255, 255));
+}

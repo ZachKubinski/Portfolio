@@ -13,7 +13,7 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <!--<link rel="stylesheet" href="~/css/site.css" />-->
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -23,7 +23,10 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar fixed-top">
+    <div id="header" class="container-fluid">
+        &lt;Full Stack Summer Camp 2018/&gt;
+    </div>
+    <nav class="navbar fixed-top" id="navbarMain">
         <div class="container-fluid">
             <div class="navbar-header">
                 <div class="navbar-brand">@Html.ActionLink("Home", "Index", "Portfolio", null)</div>
