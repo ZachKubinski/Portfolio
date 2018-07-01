@@ -76,9 +76,13 @@
     <!--jQuery function used for reflection toggle slide animation-->
     <script>
         $(document).ready(function () {
-            $("#panel").slideUp();
-            $("#flip").click(function () {
-                $("#panel").slideToggle();
+            $(".panel").slideUp();
+            $(".flip").click(function () {
+                $(".panel").slideToggle();
+            });
+            $(".panel2").slideUp();
+            $(".flip2").click(function () {
+                $(".panel2").slideToggle();
             });
         });
     </script>
