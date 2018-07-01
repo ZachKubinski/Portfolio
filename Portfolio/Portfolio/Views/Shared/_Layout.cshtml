@@ -26,7 +26,8 @@
     <div id="header" class="container-fluid">
         &lt;Full Stack Summer Camp 2018/&gt;
     </div>
-    <nav class="navbar fixed-top" id="navbarMain">
+    <hr />
+    <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
                 <div class="navbar-brand">@Html.ActionLink("Home", "Index", "Portfolio", null)</div>
@@ -72,5 +73,14 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    <!--jQuery function used for reflection toggle slide animation-->
+    <script>
+        $(document).ready(function () {
+            $("#panel").slideUp();
+            $("#flip").click(function () {
+                $("#panel").slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>
