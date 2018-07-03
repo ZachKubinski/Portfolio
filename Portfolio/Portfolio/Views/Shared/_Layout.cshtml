@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio</title>
 
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="/../css/bootstrap.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/vue.js"></script>
+    <script src="/../js/bootstrap.js"></script>
+    <script src="/../js/vue.js"></script>
     <link rel="stylesheet" type="text/css" href="/../css/StyleSheet1.css">
 
     <environment include="Development">
@@ -22,11 +22,20 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
+<body 
+    style="
+    background: linear-gradient(rgba(255, 255, 255, 0.5));
+    background-image: url(/../images/beachCartoonBackground.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;"
+      >
     <div id="header" class="container-fluid">
-        &lt;Full Stack Summer Camp 2018/&gt;
+        &lt;div class =
+        <span style="color: rgb(91, 192, 222)">"Full Stack"</span>
+        &gt; Summer Camp 2018 &lt;/div&gt;
     </div>
-    <hr />
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -43,7 +52,7 @@
             </ul>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container body-content" style="background: rgba(255, 255, 255, 0.85);">
         @RenderBody()
         <hr />
         <footer>
