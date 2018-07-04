@@ -45,10 +45,10 @@
                 <li>@Html.ActionLink("SafeNet Consulting Problem", "ATM", "Portfolio", null)</li>
                 <li>@Html.ActionLink("File I/O", "FileIO", "Portfolio", null)</li>
                 <li>@Html.ActionLink("Unit Converter", "UnitConverter", "Portfolio", null)</li>
-                <li>@Html.ActionLink("Final Project", "FinalProject", "Portfolio", null)</li>
+                <!--<li>@Html.ActionLink("Final Project", "FinalProject", "Portfolio", null)</li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>@Html.ActionLink("Bio", "Bio", "Portfolio", null)</li>
+                <!--<li>@Html.ActionLink("Bio", "Bio", "Portfolio", null)</li>-->
             </ul>
         </div>
     </nav>
@@ -83,17 +83,17 @@
 
     @RenderSection("Scripts", required: false)
     <!--jQuery function used for reflection toggle slide animation-->
-    <script>
-        $(document).ready(function () {
-            $(".panel").slideUp();
-            $(".flip").click(function () {
-                $(".panel").slideToggle();
-            });
-            $(".panel2").slideUp();
-            $(".flip2").click(function () {
-                $(".panel2").slideToggle();
-            });
-        });
-    </script>
+                <script>
+                    $(document).ready(function () {
+                        $(".panel").slideUp();
+                        $(".flip").click(function () {
+                            $(".panel").slideToggle();
+                        });
+                        $(".panel2").slideUp();
+                        $(".flip2").click(function () {
+                            $(".panel2").slideToggle();
+                        });
+                    });
+                </script>
 </body>
 </html>
