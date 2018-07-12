@@ -7,16 +7,16 @@
 
 <div class="container-fluid">
     <div class="viewTitle">SafeNet Consulting Problem</div>
-    <hr />
-    <div> Goal: </div>
-    <div> To create a cash machine (ATM) program in C# which has been given as the technical portion of interviews.</div>
-    <div> Focus: </div>
-    <div> To practice writing clean code and commenting in the C# language.</div>
-    <div>Team Members: </div>
-    <div>Individual Project.</div>
-    <div>GitHub Repository Link: </div>
-    <a href="https://github.com/ZachKubinski/SafeNetConsultingProblem.git"> LINK </a>
-    <hr />
+    <hr/>
+    <div class="viewHeader"> Goal: </div>
+    <div class="viewBody"> To create a cash machine (ATM) program in C# which has been given as the technical portion of interviews.</div>
+    <div class="viewHeader"> Focus: </div>
+    <div class="viewBody"> To practice writing clean code and commenting in the C# language.</div>
+    <div class="viewHeader">Team Members: </div>
+    <div class="viewBody">Individual Project.</div>
+    <div class="viewHeader">GitHub Repository:</div>
+    <a type="button" class="btn btn-info btn-md" href="https://github.com/ZachKubinski/SafeNetConsultingProblem.git"> LINK </a>
+    <hr/>
     <div class="container-fluid">
         <h3>Directions: </h3>
         <div>
@@ -32,7 +32,7 @@
                             <h4 class="modal-title">SafeNet Consulting Problem - C#</h4>
                         </div>
                         <div class="modal-body">
-                            <pre>
+                            <pre class="reflection">
 Standard Language Problem
 You are to write a command-line cash machine (ATM).
 The cash machine is pre-stocked with the following denominations:
@@ -51,14 +51,16 @@ Your application should take input from the standard input stream and support th
 - Displays the number of bills in that denomination present in the cash machine (e.g. I $20 $10 $1)
 • Q - Quits the application
 
-The withdrawals from the cash machine should dispense cash in the most efficient manner possible, with the least amount of bills.
-After a withdrawal, the program should display success or failure and the remaining balance in the cash machine (sample output below).
-For an inquiry, the program should display the number of bills in the denominations specified (sample output below).  
-After a restock, the program should display the balance in the cash machine (same as after a withdrawal).  
-If the input is not understood, "Invalid Command" should be displayed.  No additional messages, prompts or errors should be displayed.
+The withdrawals from the cash machine should dispense cash in the most efficient manner possible, with the 
+least amount of bills. After a withdrawal, the program should display success or failure and the remaining 
+balance in the cash machine (sample output below). For an inquiry, the program should display the number of 
+bills in the denominations specified (sample output below). After a restock, the program should display the 
+balance in the cash machine (same as after a withdrawal). If the input is not understood, "Invalid Command" 
+should be displayed.  No additional messages, prompts or errors should be displayed.
 
 Sample input/ouput.  
-Note that the > are only in the sample to denote input and would not actually be a part of the problem as no additional prompts should be displayed.
+Note that the > are only in the sample to denote input and would not actually be a part of the problem as no 
+additional prompts should be displayed.
 
 > W $208
 Success: Dispensed $208
